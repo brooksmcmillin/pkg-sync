@@ -1,0 +1,6 @@
+[server]
+url = "https://your-server.example.com"
+api_key = "your-api-key-here"
+
+[exclude]
+patterns = ["nvidia*", "cuda*", "lib32-nvidia*"]

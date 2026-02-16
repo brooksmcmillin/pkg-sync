@@ -1,0 +1,3 @@
+[workspace]
+members = ["pkg-sync-common", "pkg-sync-client", "pkg-sync-server"]
+resolver = "2"

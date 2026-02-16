@@ -1,0 +1,20 @@
+[package]
+name = "pkg-sync-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pkg-sync-common = { path = "../pkg-sync-common" }
+axum = "0.8"
+tokio = { version = "1", features = ["full"] }
+sqlx = { version = "0.8", features = ["runtime-tokio", "sqlite"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
+sha2 = "0.10"
+hex = "0.4"
+rand = "0.8"
+globset = "0.4"
+tracing = "0.1"
+tracing-subscriber = "0.3"

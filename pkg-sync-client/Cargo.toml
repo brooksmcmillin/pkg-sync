@@ -1,0 +1,13 @@
+[package]
+name = "pkg-sync-client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pkg-sync-common = { path = "../pkg-sync-common" }
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
